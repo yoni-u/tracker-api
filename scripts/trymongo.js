@@ -2,7 +2,7 @@ require('dotenv').config({ path: 'sample.env' });
 
 const { MongoClient } = require('mongodb');
 // Atlas URL - replace UUU with user, PPP with password, XXX with hostname
-const url = process.env.DB_URL || 'mongodb+srv://Yon:jOwW910yY5rIjkMX@yfirstcluster.nisig.mongodb.net/issuetracker';
+const url = process.env.DB_URL || 'mongodb://localhost/issuetracker';
 
 
 async function testWithAsync() {
